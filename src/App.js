@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import UseEffectElement from "./UseEffectElement";
+import UseStateElement from "./UseStateElement";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="border border-black p-2 m-2">
+        <UseStateElement />
+      </div>
+      <div className="border border-black p-2 m-2">
+        <UseEffectElement />
+      </div>
     </div>
   );
 }
